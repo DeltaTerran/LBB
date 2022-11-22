@@ -19,8 +19,15 @@ public class ReactiveTarget : MonoBehaviour
 
     public void ReactToHit()
     {
+        WanderingAI behavior = gameObject.GetComponent<WanderingAI>();
+        // ѕровер€ем, присоединен ли к персонажу сценарий WanderingAI; он может и отсутствовать.
+        if (behavior != null)
+        {
+            behavior.SetAlive(false);
+        }
         StartCoroutine(Die());
     }
+
     private IEnumerator Die()
     {
         this.transform.Rotate(-75, 0, 0);
