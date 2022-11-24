@@ -53,6 +53,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts CH-I\FPSInput.cs" />
      <Compile Include="Assets\Scripts CH-I\MouseLook.cs" />
+     <Compile Include="Assets\Scripts CH-II\Fireball.cs" />
+     <Compile Include="Assets\Scripts CH-II\PlayerCharacter.cs" />
      <Compile Include="Assets\Scripts CH-II\RayShooter.cs" />
      <Compile Include="Assets\Scripts CH-II\ReactiveTarget.cs" />
      <Compile Include="Assets\Scripts CH-II\SceneController.cs" />
