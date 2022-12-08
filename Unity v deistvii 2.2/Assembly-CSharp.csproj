@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts CH-II\ReactiveTarget.cs" />
      <Compile Include="Assets\Scripts CH-II\SceneController.cs" />
      <Compile Include="Assets\Scripts CH-II\WanderingAI.cs" />
+     <Compile Include="Assets\Scripts CH-III\BackAndForth.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.1.0f3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

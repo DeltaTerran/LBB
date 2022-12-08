@@ -8,6 +8,10 @@ public class WanderingAI : MonoBehaviour
     private bool _alive;
     [SerializeField] private GameObject fireballPrefab;
     private GameObject _fireball;
+    //void Start()
+    //{
+    //    _alive = true;
+    //}
     void Update()
     {
         //Непрерывно движемся вперед в каждом кадре, несмотря на повороты.
