@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts CH-7\BasicUI.cs" />
      <Compile Include="Assets\Scripts CH-I\FPSInput.cs" />
      <Compile Include="Assets\Scripts CH-I\MouseLook.cs" />
      <Compile Include="Assets\Scripts CH-II\Fireball.cs" />
@@ -61,6 +60,9 @@
      <Compile Include="Assets\Scripts CH-II\SceneController.cs" />
      <Compile Include="Assets\Scripts CH-II\WanderingAI.cs" />
      <Compile Include="Assets\Scripts CH-III\BackAndForth.cs" />
+     <Compile Include="Assets\Scripts CH-VII\BasicUI.cs" />
+     <Compile Include="Assets\Scripts CH-VII\SettingsPopup.cs" />
+     <Compile Include="Assets\Scripts CH-VII\UIController.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.1.0f3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
