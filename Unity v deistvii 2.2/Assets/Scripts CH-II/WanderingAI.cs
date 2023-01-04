@@ -2,12 +2,29 @@
 using System.Collections;
 public class WanderingAI : MonoBehaviour
 {
+    //Базовая скорость, которая регулируется положением ползунка.
+    public const float baseSpeed = 3.0f;
     //Значения для скорости движения и расстояния, с которого начинается реакция на препятствие.
+
     public float speed = 3.0f;
     public float obstacleRange = 5.0f;
     private bool _alive;
     [SerializeField] private GameObject fireballPrefab;
     private GameObject _fireball;
+    void Awake()
+    {
+        Messenger<float>.AddListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);
+    }
+    void OnDestroy()
+    {
+        Messenger<float>.RemoveListener(GameEvent.SPEED_CHANGED, OnSpeedChanged);
+    }
+    //Метод, объявленный в подписчике для события SPEED_CHANGED.
+    private void OnSpeedChanged(float value)
+    {
+        speed = baseSpeed * value;
+    }
+
     void Start()
     {
         _alive = true;

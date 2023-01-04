@@ -1,7 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 public class SettingsPopup : MonoBehaviour
 {
+    [SerializeField] private Slider speedSlider;
+    void Start()
+    {
+        speedSlider.value = PlayerPrefs.GetFloat("speed", 1);
+    }
     public void Open()
     {
         // Активируем этот объект, чтобы открыть окно.
@@ -18,6 +25,8 @@ public class SettingsPopup : MonoBehaviour
     }
     public void OnSpeedValue(float speed)
     {
-        Debug.Log("Speed:" + speed);
+        Messenger<float>.Broadcast(GameEvent.SPEED_CHANGED, speed);
+        PlayerPrefs.SetFloat("speed", speed);
+        Debug.Log(speed);
     }
 }

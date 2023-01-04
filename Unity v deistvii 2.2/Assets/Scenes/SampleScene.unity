@@ -773,7 +773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.859375, y: -0.000030517578}
+  m_AnchoredPosition: {x: -681.5, y: -345}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456723262
@@ -808,7 +808,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: '0
+
+'
 --- !u!222 &456723263
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1422,6 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b79c11246c1969840a7afa97c55d3f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedSlider: {fileID: 1718230840}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2968,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 2
   m_WholeNumbers: 0
-  m_Value: 0.877
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
